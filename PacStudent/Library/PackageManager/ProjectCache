@@ -13,11 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
-      ticks: 637713956095691096
-=======
-      ticks: 637715345591023786
->>>>>>> Collisions-In-game-Functionality-and-Saving-High-Scores
+      ticks: 637715349456788759
     m_Hash: 919429424
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
