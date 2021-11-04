@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4000379976767161060}
   - component: {fileID: 6140423982529559594}
   - component: {fileID: 6060718809473252713}
-  - component: {fileID: 445175437311045552}
   - component: {fileID: 1209864894134271987}
+  - component: {fileID: 2804496076679571862}
   m_Layer: 0
   m_Name: power pellet_0
   m_TagString: Untagged
@@ -109,20 +109,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &445175437311045552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6918809161215375657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 280de1f2c90105e4fa0852f54c5e833e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points: 200
-  collectSound: {fileID: 0}
 --- !u!58 &1209864894134271987
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -139,3 +125,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.4
+--- !u!114 &2804496076679571862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6918809161215375657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94c241018e6f2545a1064cf0fb58d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 100
+  eatenSound: {fileID: 8300000, guid: e24c505a9289d854286859dff0001c52, type: 3}
