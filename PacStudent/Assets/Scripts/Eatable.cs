@@ -5,16 +5,14 @@ using UnityEngine;
 public class Eatable : MonoBehaviour
 {
 
-    public int points = 100;//how many points to give the player upon collection
-    public AudioClip collectSound;
+    public int points = 10;
+    public AudioClip eatenSound;
 
-    // Use this for initialization
+    
     void Start()
     {
 
     }
-
-    // Update is called once per frame
     void Update()
     {
 
@@ -31,7 +29,7 @@ public class Eatable : MonoBehaviour
     protected virtual void collected(Collider2D coll)
     {
         coll.gameObject.GetComponent<pacStudentController>().addPoints(points);
-        AudioSource.PlayClipAtPoint(collectSound, transform.position);
+        AudioSource.PlayClipAtPoint(eatenSound, transform.position);
         gameObject.SetActive(false);
     }
 }

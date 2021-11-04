@@ -5,16 +5,16 @@ using UnityEngine;
 public class Collectable : MonoBehaviour
 {
 
-    public int points = 100;//how many points to give the player upon collection
+    public int points = 100;
     public AudioClip collectSound;
 
-    // Use this for initialization
+    
     void Start()
     {
 
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 
@@ -30,7 +30,6 @@ public class Collectable : MonoBehaviour
 
     protected virtual void collected(Collider2D coll)
     {
-        //coll.gameObject.GetComponent<PacStudentController>().addPoints(points);
         AudioSource.PlayClipAtPoint(collectSound, transform.position);
         gameObject.SetActive(false);
     }

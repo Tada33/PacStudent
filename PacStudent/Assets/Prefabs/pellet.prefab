@@ -133,4 +133,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 100
-  collectSound: {fileID: 8300000, guid: e24c505a9289d854286859dff0001c52, type: 3}
+  eatenSound: {fileID: 8300000, guid: e24c505a9289d854286859dff0001c52, type: 3}

@@ -6,28 +6,27 @@ using UnityEngine.UI;
 public class pacStudentController : MonoBehaviour
 {
 
-    public float speed;//the speed pacman can travel
-    public int score = 0;//the score
-    public int livesLeft = 2;//how many extras lives pacman has left
+    public float speed;
+    public int score = 0;
+    public int livesLeft = 2;
 
-    public Text scoreText;//the Text UI Component that shows the score
+    public Text scoreText;
     public Image life1;
     public Image life2;
 
-    private Vector2 direction;//the direction pacman is going
+    private Vector2 direction;
     private bool alive = true;
 
     Rigidbody2D rb2d;
     Animator animator;
 
-    // Use this for initialization
+    
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (alive)
